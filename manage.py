@@ -19,15 +19,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # To connect your Django project to Git, initialize a git repository in your project folder using the command:
-    # git init
-
-    # Then, you can add your files and make your first commit:
-    # git add .
-    # git commit -m "Initial commit"
-
-    # To connect to a remote repository (e.g., GitHub), use:
-    # git remote add origin <your-repo-url>
-    # git push -u origin master
-
-    # These commands are run in your terminal, not in the Python code.
