@@ -1,0 +1,33 @@
+#!/usr/bin/env python
+"""Django's command-line utility for administrative tasks."""
+import os
+import sys
+
+
+def main():
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'fitness_ai.settings')
+    try:
+        from django.core.management import execute_from_command_line
+    except ImportError as exc:
+        raise ImportError(
+            "Couldn't import Django. Are you sure it's installed and "
+            "available on your PYTHONPATH environment variable? Did you "
+            "forget to activate a virtual environment?"
+        ) from exc
+    execute_from_command_line(sys.argv)
+
+
+if __name__ == '__main__':
+    main()
+    # To connect your Django project to Git, initialize a git repository in your project folder using the command:
+    # git init
+
+    # Then, you can add your files and make your first commit:
+    # git add .
+    # git commit -m "Initial commit"
+
+    # To connect to a remote repository (e.g., GitHub), use:
+    # git remote add origin <your-repo-url>
+    # git push -u origin master
+
+    # These commands are run in your terminal, not in the Python code.
